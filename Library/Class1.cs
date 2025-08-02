@@ -1,6 +1,7 @@
 ﻿namespace Library;
 
 public readonly record struct Class1Record(int Value);
+public readonly record struct GenericRecord<T>(T Value) where T : class;
 
 public class Class1
 {
